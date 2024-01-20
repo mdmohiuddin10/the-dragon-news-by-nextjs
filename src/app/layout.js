@@ -15,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Nabvar></Nabvar>
-        <div className='min-h-screen'>
-          {children}
+        <div className='max-w-screen-xl mx-auto'>
+          <Nabvar></Nabvar>
+          <div className='min-h-screen'>
+            {children}
+          </div>
+          <Footer></Footer>
         </div>
-        <Footer></Footer>
       </body>
     </html>
   )

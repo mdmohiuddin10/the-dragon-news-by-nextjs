@@ -1,10 +1,23 @@
+"use client"
+import LatestNews from "@/components/ui/LatestNews/LatestNews";
+import SideBar from "@/components/ui/SideBar/SideBar";
+import { Grid, Typography } from "@mui/material";
+
 
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome to news world</h1>
-    </div>
+    <>
+
+      <Grid container spacing={2}>
+        <Grid item xs={8}>
+         <LatestNews></LatestNews>
+        </Grid>
+        <Grid item xs={4}>
+        <SideBar></SideBar>
+        </Grid>
+      </Grid>
+    </>
   );
 };
 
